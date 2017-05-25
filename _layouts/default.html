@@ -20,14 +20,6 @@
       <section>
       {{ content }}
       </section>
-
-      <aside>
-        <ul>
-        {% for page in site.pages %}
-          <li><a href="{{page.url}}">{{page.title}}</a></li>
-        {% endfor %}
-        </ul>
-      </aside>
       <footer>
         <p>Ce projet est maintenu par <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
 
