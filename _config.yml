@@ -1,1 +1,12 @@
-theme: jekyll-theme-minimal
+repository: amaprouen/amaprouen.github.io
+# Site settings
+title: AMAP Rouen
+url: http://amaprouen.org
+#theme: minima
+theme: minima
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
