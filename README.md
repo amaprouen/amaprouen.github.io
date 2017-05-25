@@ -1,5 +1,5 @@
 # AMAP Rouen
 Pages web public de l'AMAP Rouen
 
-<amaprouen.org>
-<amaprouen.github.io>
+<http://amaprouen.org>
+<http://amaprouen.github.io>
