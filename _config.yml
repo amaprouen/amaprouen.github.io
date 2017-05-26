@@ -5,8 +5,6 @@ url: http://amaprouen.org
 #theme: minima
 theme: minima
 markdown: kramdown
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
