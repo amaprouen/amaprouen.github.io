@@ -170,6 +170,7 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
+    psych (2.0.5)
     public_suffix (2.0.5)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
@@ -195,6 +196,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   minima (~> 2.0)
+  psych (= 2.0.5)
 
 BUNDLED WITH
    1.15.0
