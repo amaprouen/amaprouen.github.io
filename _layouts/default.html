@@ -13,17 +13,28 @@
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
+    <main class="wrapper">
       <header>
         <h1><a href="{{site.url}}">{{ site.title | default: site.github.repository_name }}</a></h1>
         <p><em>{{ site.description | default: site.github.project_tagline }}</em></p>
       </header>
+      <figure>
+        <img src="{{ site.url }}/assets/images/amap-rouen-little-peas.png" alt="Le petit pois se révolte" title="Devenez consommacteur">
+      </figure>
       <section>
       {{ content }}
+      </section>
+      <section>
+        <h2>Contrats à télécharger</h2>
+        <ul class="gl-wrapper links-list">
+          {% for link in site.data.attachments %}
+           <li class="gl-cell"><a href="{{ link.url }}">{{ link.name }}</a></li>
+           {% endfor %}
+        </ul>
       </section>
       <footer>
         <p><small>Hébergé sur <a href="http://github.com">GitHub</a> &mdash; Thème par <a href="https://github.com/ziopod">Ziopod</a> basé sur le thème <a href="https://github.com/jekyll/minima">Minima</a> &mdash; <a href="{{ site.github.repository_url }}">Contribuer à ce site</a></small></p>
       </footer>
-    </div>
+    </main>
   </body>
 </html>

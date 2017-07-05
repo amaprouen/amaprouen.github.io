@@ -1,3 +1,32 @@
-$base-font-family: Georgia, serif !default;
-$base-font-size: 1.125em;
-$brand-color:      #2373db !default;
+
+/** Layout **/
+.wrapper { background-color: #fff; }
+
+main > figure {
+  margin-left: -$spacing-unit;
+  @include media-query($on-laptop) {
+    margin-left: -$spacing-unit / 2;
+  }
+}
+
+/** Typography **/
+h1 { font-size: 2em; }
+
+/** Grid layout **/
+.gl-wrapper {
+  display: grid;
+  grid-gap: .2em;
+  // grid-auto-rows: minmax(3em, auto);
+  justify-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+  &.links-list
+  {
+    list-style: none;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+.gl-cell {
+  outline: 1px solid lighten($brand-color, 30%);
+  padding: .5em;
+}
