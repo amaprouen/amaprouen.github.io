@@ -1,7 +1,9 @@
 repository: amaprouen/amaprouen.github.io
-# Site settings
+# Configuration
 title: AMAP Rouen
+description: AMAP Rouen, pour le maintien d'une agriculture paysanne
 url: http://amaprouen.org
+
 #theme: minima
 theme: minima
 markdown: kramdown
@@ -10,6 +12,17 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+
+# Front matter par défaut
+defaults:
+  - scope:
+      path: ""
+      types: pages
+    values:
+      layout: default
+
+# Utiliser un repéertoire "_pages"
+collections:
+  pages:
+    output: true
+    permalink: /:path
